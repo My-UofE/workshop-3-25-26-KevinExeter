@@ -24,12 +24,11 @@ public class AverageSquares {
         System.out.println("You entered: " + startNum + " and " + endNum);
 
         double sum = 0;
-
         double i = startNum;
-        while (i <= endNum) {
+        do {
             sum += i*i;
             ++i;
-        }
+        } while (i <= endNum);
 
         System.out.println(sum / (endNum - startNum + 1));
 
